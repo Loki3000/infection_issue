@@ -1,0 +1,26 @@
+Escaped mutants:
+================
+
+1) /var/infection_test/src/myClass.php:9    [M] Equal
+
+--- Original
++++ New
+@@ @@
+     private $status = 'test';
+     public function checkStatus()
+     {
+-        return $this->status == myFunc();
++        return $this->status != myFunc();
+     }
+ }
+ function myFunc()
+
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Not Covered mutants:
+====================
